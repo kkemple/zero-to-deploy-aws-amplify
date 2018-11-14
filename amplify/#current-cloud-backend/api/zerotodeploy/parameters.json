@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "zerotodeploy",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito9d4b40ed",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://erooeploy-20181109172022-deployment/amplify-appsync-files/schema.graphql.1542134400287",
+    "ResolverBucket": "erooeploy-20181109172022-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1542134400287"
+}

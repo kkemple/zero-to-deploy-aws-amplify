@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "erooeploy-20181109172022-authRole",
+            "UnauthRoleArn": "arn:aws:iam::247237495454:role/erooeploy-20181109172022-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::247237495454:role/erooeploy-20181109172022-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "erooeploy-20181109172022-deployment",
+            "UnauthRoleName": "erooeploy-20181109172022-unauthRole",
+            "StackName": "erooeploy-20181109172022",
+            "StackId": "arn:aws:cloudformation:us-east-1:247237495454:stack/erooeploy-20181109172022/a6a353d0-e46d-11e8-b7cb-500c21792a35"
+        }
+    }
+}

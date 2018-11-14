@@ -1,0 +1,74 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "erooeploy-20181109172022-authRole",
+			"UnauthRoleArn": "arn:aws:iam::247237495454:role/erooeploy-20181109172022-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::247237495454:role/erooeploy-20181109172022-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "erooeploy-20181109172022-deployment",
+			"UnauthRoleName": "erooeploy-20181109172022-unauthRole",
+			"StackName": "erooeploy-20181109172022",
+			"StackId": "arn:aws:cloudformation:us-east-1:247237495454:stack/erooeploy-20181109172022/a6a353d0-e46d-11e8-b7cb-500c21792a35"
+		}
+	},
+	"auth": {
+		"cognito9d4b40ed": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/erooeploy-20181109172022-deployment/amplify-cfn-templates/auth/cognito9d4b40ed-cloudformation-template.yml",
+				"logicalId": "authcognito9d4b40ed"
+			},
+			"lastPushTimeStamp": "2018-11-13T20:11:59.460Z",
+			"output": {
+				"AppClientSecret": "15toi17u5ta8pocbs1c3isn6ve8jm7qln9mfpkqfhqur8noq5oe5",
+				"UserPoolId": "us-east-1_Gszj1OvHj",
+				"AppClientIDWeb": "7lvlu50k3js02k84j39vop3em5",
+				"AppClientID": "7j3noih5cun2mbev15p2jfpe2g",
+				"IdentityPoolId": "us-east-1:96660bff-fcc6-490a-b464-c08da9359cff",
+				"IdentityPoolName": "cognito9d4b40ed_identitypool_9d4b40ed",
+				"UserPoolName": "cognito9d4b40ed_userpool_9d4b40ed"
+			},
+			"lastPushDirHash": "3KJ/07k4+LUIIwqPsAvaRnkBgrM="
+		}
+	},
+	"api": {
+		"zerotodeploy": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "icgt6xlb3zc2nk43hostbayppm",
+				"GraphQLAPIEndpointOutput": "https://bjiikf5ohfffheppzw4oc6b7ha.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-pqu4a2gp3rfgphuixafl355gdm",
+				"AuthCognitoUserPoolIdOutput": "us-east-1_Gszj1OvHj",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: us-east-1_Gszj1OvHj",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: us-east-1_Gszj1OvHj"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/erooeploy-20181109172022-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apizerotodeploy"
+			},
+			"lastPushTimeStamp": "2018-11-13T20:11:59.461Z",
+			"lastPushDirHash": "/+U73gYFOges3ueaPkwCMPo7SNM="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/erooeploy-20181109172022-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-11-13T20:11:59.468Z",
+			"output": {
+				"S3BucketSecureURL": "https://zero-to-deploy-aws-amplify.s3.amazonaws.com",
+				"WebsiteURL": "http://zero-to-deploy-aws-amplify.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "zero-to-deploy-aws-amplify"
+			},
+			"lastPushDirHash": "H3P6mZyNIm16gRFhL4f/HMTXIzw="
+		}
+	}
+}

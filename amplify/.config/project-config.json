@@ -1,0 +1,20 @@
+{
+    "projectName": "ZeroToDeploy",
+    "projectPath": "/Users/mothership/Projects/from-zero-to-deploy-aws-amplify",
+    "defaultEditor": "code",
+    "frontendHandler": {
+        "javascript": "/Users/mothership/.config/yarn/global/node_modules/amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "react",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "build",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "npm run-script start"
+        }
+    },
+    "providers": {
+        "awscloudformation": "/Users/mothership/.config/yarn/global/node_modules/amplify-provider-awscloudformation"
+    }
+}
